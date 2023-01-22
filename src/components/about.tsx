@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import avatar from '../../public/assets/avatar-green.png'
+import Skills from "./skills";
 
 export default function About() {
   return (
@@ -24,7 +24,7 @@ export default function About() {
                 <a target="_blank" href='https://www.sep.com'>SEP</a>
             </span> for a variety of clients.
           </p>
-          <p className="py-4 text-[#ED009C] font-bold hover:border-b">Check out some of my latest projects!</p>
+          <Skills/>
         </div>
         <div className="w-full h-auto m-auto shadow-lg shadow-[#ff514d] rounded-full flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
         <Image

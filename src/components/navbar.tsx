@@ -5,6 +5,7 @@ import { FaHamburger, FaLinkedin, FaGithubAlt } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonFill } from "react-icons/bs";
+import Gradient from "./gradient";
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
@@ -42,18 +43,7 @@ export default function Navbar() {
             </Link>
           </ul>
           <div onClick={handleNav} className="md:hidden">
-            <svg width="0" height="0">
-              <linearGradient
-                id="pink-orange-gradient"
-                x1="100%"
-                y1="100%"
-                x2="0%"
-                y2="0%"
-              >
-                <stop stopColor="#ED009C" offset="0%" />
-                <stop stopColor="#FF514D" offset="100%" />
-              </linearGradient>
-            </svg>
+            <Gradient/>
             <FaHamburger
               style={{ fill: "url(#pink-orange-gradient)" }}
               size={30}

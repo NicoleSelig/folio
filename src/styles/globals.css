@@ -23,6 +23,10 @@
     @apply cursor-pointer
   }
 
+  p {
+    @apply text-[#7D98A1]
+  }
+
   button {
     @apply shadow-xl shadow-black rounded-xl uppercase bg-gradient-to-r from-[#ED009C] to-[#FF514D]
   }

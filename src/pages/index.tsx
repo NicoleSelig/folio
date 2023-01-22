@@ -1,6 +1,8 @@
+import About from '@/components/about'
 import Navbar from '@/components/navbar'
 import Main from '@/components/main'
 import Head from 'next/head'
+
 
 export default function Home() {
   return (
@@ -13,6 +15,7 @@ export default function Home() {
       </Head>
       <Navbar/>
       <Main/>
+      <About/>
     </>
   )
 }

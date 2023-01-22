@@ -16,7 +16,7 @@ export default function Main() {
             I’m a software engineer specializing in building (and occasionally
             designing) exceptional digital experiences. Currently, I’m focused
             on building solutions for clients at{" "}
-            <span className="text-[#ED009C] font-bold">
+            <span className="text-[#ED009C] font-bold hover:border-b">
                 <a target="_blank" href='https://www.sep.com'>SEP</a>
             </span>
             .

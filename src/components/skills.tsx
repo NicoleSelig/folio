@@ -14,7 +14,7 @@ import Skill from "./skill";
 
 export default function Skills() {
   return (
-    <div className="w-full md:h-screen p-2 flex">
+    <div id="skills" className="w-full md:h-screen p-2 flex">
       <div className="max-w-[1240px] mx-auto flex-col justify-center h-full">
         <SectionLabel label="Skills" header="What I Can Do"/>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

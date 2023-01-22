@@ -5,7 +5,7 @@ import { BsFillPersonFill } from "react-icons/bs";
 
 export default function Main() {
   return (
-    <div className="w-full h-screen text-center">
+    <div id="home" className="w-full h-screen text-center">
       <div className="max-w-[700px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <h1 className="py-4">

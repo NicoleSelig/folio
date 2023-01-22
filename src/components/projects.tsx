@@ -8,7 +8,7 @@ import Project from "./project";
 
 export default function Projects() {
   return (
-    <div className="w-full">
+    <div id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
         <SectionLabel label="Projects" header="Things I've Built" />
         <div className="grid md:grid-cols-2 gap-8">

@@ -25,21 +25,21 @@ export default function Navbar() {
         />
         <div>
           <ul className="hidden md:flex items-center">
-            <Link href="/">
+            <Link href="/#about">
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
             </Link>
-            <Link href="/">
+            <Link href="/#skills">
               <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
             </Link>
-            <Link href="/">
+            {/* <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Experience
               </li>
+            </Link> */}
+            <Link href="/#projects">
+              <li className="ml-10 text-sm uppercase hover:border-b">Projects</li>
             </Link>
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Work</li>
-            </Link>
-            <Link href="/">
+            <Link href="/#contact">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Contact
               </li>
@@ -88,19 +88,19 @@ export default function Navbar() {
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
-              <Link href="/">
+              <Link href="/#about">
                 <li className="text-[#101021] py-4 text-sm">About</li>
               </Link>
-              <Link href="/">
+              <Link href="/#skills">
                 <li className="text-[#101021] py-4 text-sm">Skills</li>
               </Link>
-              <Link href="/">
+              {/* <Link href="/#">
                 <li className="text-[#101021] py-4 text-sm">Experience</li>
+              </Link> */}
+              <Link href="/#projects">
+                <li className="text-[#101021] py-4 text-sm">Projects</li>
               </Link>
-              <Link href="/">
-                <li className="text-[#101021] py-4 text-sm">Work</li>
-              </Link>
-              <Link href="/">
+              <Link href="/#contact">
                 <li className="text-[#101021] py-4 text-sm">Contact</li>
               </Link>
               <li className="text-[#101021] py-4 text-sm">

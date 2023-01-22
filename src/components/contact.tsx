@@ -4,7 +4,7 @@ import SectionLabel from "./sectionLabel";
 
 export default function Contact() {
   return (
-    <div className="w-full h-screen text-center">
+    <div id="contact" className="w-full h-screen text-center">
       <div className="max-w-[700px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div className="">
           <SectionLabel label="What's Next?" header="Let's Get In Touch" />

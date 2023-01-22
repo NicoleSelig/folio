@@ -15,7 +15,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="fixed w-full h-20 z-[100]">
+    <div className="fixed w-full h-20 z-[100] bg-[#101021]">
       <div className="flex justify-between items-center w-full px-2 2xl:px-16">
         <Image
           src="/../public/assets/navlogo.gif"
@@ -24,9 +24,12 @@ export default function Navbar() {
           height="50"
         />
         <div>
-          <ul className="hidden md:flex">
+          <ul className="hidden md:flex items-center">
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
+            </Link>
+            <Link href="/">
+              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
             </Link>
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-b">
@@ -41,9 +44,14 @@ export default function Navbar() {
                 Contact
               </li>
             </Link>
+            <li className="ml-10">
+              <button className="bg-transparent hover: bg-gradient-to-r from-[#ED009C] to-[#FF514D] font-semibold hover:text-[#EAD5E6] py-1.5 px-2.5 border border-[#ED009C] hover:border-transparent rounded">
+                Resume
+              </button>
+            </li>
           </ul>
           <div onClick={handleNav} className="md:hidden">
-            <Gradient/>
+            <Gradient />
             <FaHamburger
               style={{ fill: "url(#pink-orange-gradient)" }}
               size={30}
@@ -53,7 +61,9 @@ export default function Navbar() {
       </div>
 
       <div
-        className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""}
+        className={
+          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+        }
       >
         <div
           className={
@@ -69,19 +79,20 @@ export default function Navbar() {
               width="55"
               height="50"
             />
-            <div onClick={handleNav} className="rounded-full shadow-lg shadow-[#101021] p-3 cursor-pointer">
+            <div
+              onClick={handleNav}
+              className="rounded-full shadow-lg shadow-[#101021] p-3 cursor-pointer"
+            >
               <IoMdClose color="#101021" />
             </div>
-          </div>
-          <div className="border-b border-[#101021] my-4">
-            <p className="w-[85%] md:w=[90%] py-4 text-[#101021]">
-              Let's build something legendary together
-            </p>
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
                 <li className="text-[#101021] py-4 text-sm">About</li>
+              </Link>
+              <Link href="/">
+                <li className="text-[#101021] py-4 text-sm">Skills</li>
               </Link>
               <Link href="/">
                 <li className="text-[#101021] py-4 text-sm">Experience</li>
@@ -92,6 +103,11 @@ export default function Navbar() {
               <Link href="/">
                 <li className="text-[#101021] py-4 text-sm">Contact</li>
               </Link>
+              <li className="text-[#101021] py-4 text-sm">
+                <button className="bg-transparent hover: bg-gradient-to-r from-[#ED009C] to-[#FF514D] font-semibold hover:text-[#EAD5E6] py-2 px-4 border border-[#ED009C] hover:border-transparent rounded">
+                  Resume
+                </button>
+              </li>
             </ul>
             <div className="pt-10">
               <p className="uppercase tracking-widest text-[#101021]">
